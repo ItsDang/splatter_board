@@ -1,3 +1,4 @@
+// https://stackoverflow.com/questions/51659805/persisting-appbar-drawer-across-all-pages-flutter
 import 'package:flutter/material.dart';
 
 class DrawerScreen extends StatelessWidget {

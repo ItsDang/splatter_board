@@ -17,13 +17,34 @@ class ClimbScreen extends StatelessWidget {
             ? const BackButton()
             : null,
       ),
-      body: Column(children: <Widget>[
-        Image(image: AssetImage('assets/${climb.path}')),
-        Row(children: <Widget>[
-          Text(climb.grade),
-          Text(climb.angle),
+      body: SizedBox(
+        child: Column(children: <Widget>[
+          Expanded(
+            flex: 11,
+            child: SizedBox(
+              child: Image(image: AssetImage('assets/${climb.path}')),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: SizedBox(
+              child: Row(children: <Widget>[
+                Expanded(
+                  child: Center(
+                      child: Image(
+                          image: AssetImage('assets/${climb.grade}.png'))),
+                ),
+                Expanded(
+                  child: Center(child: Text(climb.angle)),
+                ),
+                Expanded(
+                  child: Center(child: Text(climb.grade)),
+                ),
+              ]),
+            ),
+          ),
         ]),
-      ]),
+      ),
       endDrawer: const DrawerScreen(),
     );
   }

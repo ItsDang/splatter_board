@@ -1,10 +1,10 @@
-import 'package:splatter_board/Classes/boardType.dart';
+import 'package:splatter_board/Classes/board_type.dart';
 
 import 'climb.dart';
 
 class Board {
   String name;
-  boardType type;
+  BoardType type;
   List<Climb> climbs;
 
   Board(this.name, this.type, this.climbs);

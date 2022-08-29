@@ -100,14 +100,16 @@ class _MyStatefulWidgetState extends State<ClimbForm> {
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
-              } else if (num.tryParse(value) != null) {
+              } else {
                 final n = num.tryParse(value);
-                if (n != null && (n < 0 || n > 90)) {
+                if (n == null) {
+                  return 'Please enter a number';
+                }
+                if (n < 0 || n > 90) {
                   return 'Please enter an angle between 0 and 90';
                 }
                 return null;
               }
-              return null;
             },
           ),
           Padding(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Classes/climb.dart';
-import 'DrawerScreen.dart';
+import 'drawer_m.dart';
 
 class ClimbScreen extends StatelessWidget {
   const ClimbScreen({super.key, required this.climb});
@@ -32,13 +32,13 @@ class ClimbScreen extends StatelessWidget {
                 Expanded(
                   child: Center(
                       child: Image(
-                          image: AssetImage('assets/${climb.grade}.png'))),
+                          image: AssetImage('assets/${climb.grade.name}.png'))),
                 ),
                 Expanded(
-                  child: Center(child: Text(climb.angle)),
+                  child: Center(child: Text('${climb.angle}°')),
                 ),
                 Expanded(
-                  child: Center(child: Text(climb.grade)),
+                  child: Center(child: Text(climb.grade.name)),
                 ),
               ]),
             ),

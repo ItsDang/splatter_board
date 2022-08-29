@@ -6,13 +6,18 @@ DONE
 4. allow you to pick which board to look at
 5. have boards contained in gym?
 6. allow you to select gym.
+7. Encapsulate Drawer so don't have to make changes all over screens
+8. need to add actual gyms screen and move everything down one in the screen chain
+9. consider floating action button instead of add in appbar
+10. change from bottomNavigationBar to a Row of buttons or a single save button
 
 Things to do
-7. Encapsulate Drawer so don't have to make changes all over screens
-8. Add add, edit and delete
-9. add db stuff
-10. create auto generate user id
-11. add owner permissions so that only owner can edit
-12. add tags to climbs
+Add add, edit and delete
+add db stuff
+create auto generate user id
+add owner permissions so that only owner can edit
+add tags to climbs
+customize list view for each screen
+
 
 */
